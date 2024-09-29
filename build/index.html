@@ -7,12 +7,92 @@
     <link rel="stylesheet" href="./css/style.css">
     <script src="./script.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .input{
+            width: 500px;
+            height: 50px;
+            background-color: transparent;
+            border: 1px solid white;
+            border-radius: 45px;
+            padding-left: 15px;
+        }
+        .btn{
+            background-color: #14b8ac;
+            height: 50px;
+            width: 90px;
+            border: 1px solid transparent;
+            border-radius: 45px;
+            position: absolute;
+            top: 0;
+            right: 0;
+
+        }
+        .head{
+            width: 500px;
+        }
+        .sect{
+            width: 500px;
+        }
+        .small{
+            width: 450px;
+            height: 50px;
+        }
+        .sed{
+            width: 450px;
+        }
+        .roc{
+            width: 450px;
+        }
+        .btn{
+            height: 50px;
+        }
+
+    </style>
 </head>
-<body class="bg-slate-100 items-center justify-center w-screen dark:bg-slate-900 text-slate-800 dark:text-white h-full flex">
-    <main class="max-w-5xl justify-center h-96 flex  mt-36">
-        <div class="pt-4 pl-6 pr-6">
-            <h1 class="text-3xl text-teal-500 font-bold">TODO APP</h1>
+<body class="bg-slate-100  justify-center w-screen dark:bg-slate-900 text-slate-800 dark:text-white h-full flex">
+    <!--main section for big screen-->
+    <main class="max-w-6xl  h-96  justify-center mt-36 lg:block md:block hidden">
+        <div class="pt-4 pl-6 pr-6 mb-4 justify-center head flex">
+            <h1 class="text-4xl text-teal-500 font-bold">TODO APP</h1>
         </div>
+
+
+        <section class="sect">
+            <form action="" class="relative">
+                <div >
+                    <input class="input border-opacity-50 border-white" type="text" name="text" id="tex" placeholder="write anything and hit enter to add">
+                </div>
+
+                <button class="btn " type="submit">ADD</button>
+            </form>
+            
+        </section>
+        
+            
+
+    </main>
+
+
+
+    <!--main section for smaill screen-->
+    <main class=" w-screen mx-auto justify-center h-96   mt-10 lg:hidden md:hidden sm:block">
+        <div class="pt-4 pl-6 pr-6 .sed">
+            <h1 class="text-4xl text-teal-500 font-bold flex justify-center">TODO APP</h1>
+        </div>
+
+        <section class=" mt-6 pr-5 ml-4">
+            <div>
+                <form action="" class="relative">
+                    <input class=" small  border border-white border-opacity-40 rounded-2xl pl-4 bg-transparent" type="text" name="text" id="text" placeholder="write anything and hit enter to add">
+
+
+                    <button class=" btn bg-teal-500 border border-transparent rounded-2xl absolute top-0 right-0" type="submit">ADD</button>
+                </form>
+                
+            </div>
+                
+
+        </section>
 
     </main>
 </body>
